@@ -189,12 +189,26 @@ def testAI(filename):
         pygame.draw.rect(screen, (0, 255, 0), Rect((car.x, car.y), (car.size)))
         pygame.draw.line(screen, (255, 255, 0), (car.x + car.size[0] / 2, car.y + car.size[1] / 2),
                          (car.dis_pos[0], car.dis_pos[1]))
+
+        pygame.display.update()
+        for event in pygame.event.get():
+            if event.type == QUIT:
+                exit()
         pygame.draw.line(screen, (0, 255, 0), (car.x + car.size[0] / 2, car.y + car.size[1] / 2),
                          (car.ldis_pos[0], car.ldis_pos[1]))
+
+        pygame.display.update()
+        for event in pygame.event.get():
+            if event.type == QUIT:
+                exit()
         pygame.draw.line(screen, (0, 255, 0), (car.x + car.size[0] / 2, car.y + car.size[1] / 2),
                          (car.lldis_pos[0], car.lldis_pos[1]))
+
+        pygame.display.update()
         pygame.draw.line(screen, (0, 255, 0), (car.x + car.size[0] / 2, car.y + car.size[1] / 2),
                          (car.rdis_pos[0], car.rdis_pos[1]))
+
+        pygame.display.update()
         pygame.draw.line(screen, (0, 255, 0), (car.x + car.size[0] / 2, car.y + car.size[1] / 2),
                          (car.rrdis_pos[0], car.rrdis_pos[1]))
 
@@ -203,7 +217,7 @@ def testAI(filename):
 
 if __name__ == '__main__':
     gameStart()
-    # filename = "goal_para/goal_76.npz"
-    # testAI(filename)
+    filename = "goal_para/goal_11.npz"
+    testAI(filename)
 
 

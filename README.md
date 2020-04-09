@@ -1,5 +1,6 @@
 # 小车AI-demo 0.1.1
 - 邮箱:812860165@qq.com
+- 原始工程地址：[https://github.com/heucoder/carAI-Demo](原工程)
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 - **使用python编写的小车AI，使用浅层神经网络控制小车，使用遗传算法选择表现表现好的神经网络；编译环境为python3.6.2**
 ## 小车部分
@@ -32,3 +33,6 @@ https://zhuanlan.zhihu.com/p/60195914
 
 
 
+
+
+[]: https://github.com/heucoder/carAI-Demo
